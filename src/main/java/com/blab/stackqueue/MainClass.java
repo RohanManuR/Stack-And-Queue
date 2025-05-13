@@ -20,5 +20,18 @@ public class MainClass {
         System.out.println(stack.pop());
         System.out.println(stack);
 
+//==========================================================================
+
+        // Queue Object created
+        Queue queue = new Queue();
+        // Adding the data from rear side to
+        queue.enqueu(57);
+        queue.enqueu(30);
+        queue.enqueu(70);
+
+        // display the element from queue in front side
+        System.out.println(queue);
+
+
     }
 }

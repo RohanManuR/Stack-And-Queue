@@ -56,5 +56,25 @@ public class LinkedList<E> {
         return temp.data;
     }
 
+    // method to add element to node from tail
+    public boolean append(E data)
+    {
+        // node object created
+        Node node = new Node(data);
+        // checking head is empty or not
+        if(head==null) {
+            head = node;
+        }
+        else{
+            // pointing temp to head and traversing to access last node
+            Node temp = head;
+            while (temp.next!=null) {
+                temp = temp.next;
+            }
+            temp.next = node;
+        }
+        return true;
+    }
+
 
 }
