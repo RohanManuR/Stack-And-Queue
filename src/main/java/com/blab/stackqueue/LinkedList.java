@@ -33,5 +33,28 @@ public class LinkedList<E> {
         return "";
     }
 
+    // method to fetch first element
+    public E access()
+    {
+        // checking head is empty or not
+        if(head == null){
+            throw new RuntimeException("Stack is empty.");
+        }
+        return head.data;
+    }
+
+    // method to fetch and remove the top element
+    public E delete()
+    {
+        // creating temp node pointing to head
+        Node<E> temp = head;
+        // checking head is empty or not
+        if(head == null){
+            throw new RuntimeException("Stack is empty.");
+        }
+        head = head.next;
+        return temp.data;
+    }
+
 
 }

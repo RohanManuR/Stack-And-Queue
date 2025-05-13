@@ -13,6 +13,12 @@ public class MainClass {
         // display stack elements
         System.out.println(stack);
 
+        // peek method
+        System.out.println(stack.peek());
+
+        // pop method
+        System.out.println(stack.pop());
+        System.out.println(stack);
 
     }
 }

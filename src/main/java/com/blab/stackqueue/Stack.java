@@ -1,5 +1,5 @@
 package com.blab.stackqueue;
-
+// created Stack class to perform Stack operation(FILO)
 public class Stack<E> {
 
     // Linked list object creation
@@ -11,6 +11,20 @@ public class Stack<E> {
         Node node = new Node(data);
         // adding data to linked list node
         return list.add(data);
+    }
+
+    // method to access first element from stack
+    public E peek()
+    {
+        // calling access method from linked list to fetch first element
+        return list.access();
+    }
+
+    // method to access and remove the first element from stack
+    public E pop()
+    {
+        // calling delete method to display and delete first element
+        return list.delete();
     }
 
     // Overridden toString() to display stack elements
