@@ -22,7 +22,7 @@ public class LinkedList<E> {
     {
         // checking head is empty or not
         if(head==null)
-            return "";
+            return "Empty Collection";
         // display node data's by using loop traversing
         Node temp = head;
         while(temp.next!=null){

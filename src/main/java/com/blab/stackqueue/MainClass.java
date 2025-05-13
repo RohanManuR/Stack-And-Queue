@@ -32,6 +32,11 @@ public class MainClass {
         // display the element from queue in front side
         System.out.println(queue);
 
+        // remove and display the element from front side in queue
+        System.out.println(queue.dequeue());
+
+        // display the element from queue in front side
+        System.out.println(queue);
 
     }
 }
